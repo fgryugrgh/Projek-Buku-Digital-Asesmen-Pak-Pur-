@@ -1,0 +1,112 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  color: #ddd;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  height: 100vh;
+}
+
+.turn {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #4caf50;
+  text-align: center;
+}
+
+.scoreContainer {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align:center;
+}
+
+.score {
+  margin: 0;
+  color: white;
+}
+
+.reset,
+#swap {
+  padding: 10px;
+  font-size: 1rem;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+}
+
+.reset:hover,
+#swap:hover {
+  background-color: white;
+  color: #4caf50;
+}
+
+.ticContainer {
+  width: 100%;
+  max-width: 420px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-self: center;
+  border-width: 10px;
+  border-color: #444;
+  margin-top: 20px; /* Adjusted margin-top */
+}
+
+.c {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border-width: 5px;
+  border-color: #444;
+  border: solid;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+}
+
+.c:hover {
+  box-shadow:lightsalmon;
+}
+
+.overlay {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.overP {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+@media (max-width: 600px) {
+  .ticContainer {
+    margin-top: 10px; /* Adjusted margin-top for smaller screens */
+  }
+}

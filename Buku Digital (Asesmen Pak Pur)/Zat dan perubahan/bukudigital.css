@@ -1,0 +1,161 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  transition: transform 0.3s ease;
+  z-index: 998;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+h1,
+h2 {
+  color: #2c3e50;
+  margin: 20px;
+}
+
+.chapter {
+  margin-bottom: 40px;
+  margin: 20px;
+}
+
+.chapter h2 {
+  background-color: #f39c12;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.chapter h3 {
+  color: #34495e;
+  margin: 20px;
+}
+
+.chapter p {
+  text-align: justify;
+  margin: 10px 0;
+  margin: 20px;
+}
+
+.headerDiv {
+  display: flex;
+  justify-content: center; /* Center the h1 */
+  align-items: center;
+  z-index: 1000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  transition: transform 0.3s ease;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+.headerDiv h1 {
+  color: #2c3e50;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center; /* Center text */
+  margin: 20px;
+}
+
+.menuDiv {
+  z-index: 1001;
+  position: absolute;
+  left: 20px;
+}
+
+.hamburger-menu {
+  /* Adjust as needed */
+  width: 50px;
+  height: 50px;
+}
+
+.hide {
+  transform: translateY(-100%);
+}
+
+.hideX {
+  transform: translateX(-100%);
+}
+
+#hoverArea {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  position: fixed;
+  padding-bottom: 100px;
+  pointer-events: all;
+}
+
+.show {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .hide {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .hide {
+    display: none;
+  }
+  .hide2 {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+}
+
+.image {
+  margin-left: 20px;
+  max-width: 250px;
+  height: auto;
+  display: block; /* This removes any extra space under the image */
+}
+
+.tabelperiodik {
+  width: 100%;
+  border: none;
+  overflow: hidden;
+}

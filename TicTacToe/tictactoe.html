@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TicTacToe</title>
+  <script defer src="tictactoe.js"></script>
+  <link rel="stylesheet" type="text/css" href="tictactoe.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div>
+    <div id="overlay" class="overlay" onclick="clearOver()"><p class="overP" id="overP"></p></div>
+    <div class="turn" id="turn"> X turn </div>
+    <div class="scoreContainer"><p class="score" id="score"> X:0 O:0 </p></div>
+    <button onclick="resetScore()" class="reset">Reset score</button>
+    <button id="swap" onclick="swap()">swap X => O</button>
+  </div>
+  <div class="ticContainer">
+    <div class="c" id="c0" onclick="click12('c0')"></div>
+    <div class="c" id="c1" onclick="click12('c1')"></div>
+    <div class="c" id="c2" onclick="click12('c2')"></div>
+    <div class="c" id="c3" onclick="click12('c3')"></div>
+    <div class="c" id="c4" onclick="click12('c4')"></div>
+    <div class="c" id="c5" onclick="click12('c5')"></div>
+    <div class="c" id="c6" onclick="click12('c6')"></div>
+    <div class="c" id="c7" onclick="click12('c7')"></div>
+    <div class="c" id="c8" onclick="click12('c8')"></div>
+  </div>
+</body>
+
+</html>
